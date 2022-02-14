@@ -139,11 +139,32 @@ body {
   align-items: center;
 }
 
-.contacts-items:hover,
+/* ---mail header(hover/focus)--- */
+.contacts-items:hover {
+  color: var(--logo-color-main);
+}
+.contacts-items:hover .icon-phone {
+  fill: var(--logo-color-main);
+}
 .contacts-items:focus {
   color: var(--logo-color-main);
 }
-
+.contacts-items:focus .icon-phone {
+  fill: var(--logo-color-main);
+}
+/* ---phone header(hover/focus)--- */
+contacts-items:hover {
+  color: var(--logo-color-main);
+}
+.contacts-items:hover .icon-mail {
+  fill: var(--logo-color-main);
+}
+.contacts-items:focus {
+  color: var(--logo-color-main);
+}
+.contacts-items:focus .icon-mail {
+  fill: var(--logo-color-main);
+}
 .contacts-list-items:not(:last-child) {
   margin-right: 50px;
 }
@@ -526,10 +547,8 @@ img {
 .socials-item-link {
   border-radius: 50%;
   display: block;
-  margin-top: 20px;
   display: flex;
   align-items: center;
-  justify-content: center;
   background-size: cover;
 }
 
@@ -539,17 +558,23 @@ img {
   fill: #afb1b8;
   padding: 12px;
 }
+/* ---Social-link our team (hover/focus) --- */
+.socials-item-link:hover {
+  background-color: var(--logo-color-main);
+}
 
-.socials-item-link:hover,
+.socials-item-link:hover .link-logo {
+  fill: var(--logo-color-footer);
+}
+
 .socials-item-link:focus {
   background-color: var(--logo-color-main);
 }
 
-.link-logo:hover,
-.link-logo:focus {
+.socials-item-link:focus .link-logo {
   fill: var(--logo-color-footer);
 }
-
+/* ---END Social-link our team (hover/focus) --- */
 .customers {
   padding-top: 94px;
 }
@@ -581,8 +606,14 @@ img {
   border-radius: 4px;
 }
 
-.clients-logo:hover,
-.clients-logo:focus {
+/* ---Customers logo (hover/focus)--- */
+
+.customers-list-item-link:hover .clients-logo {
+  fill: var(--logo-color-main);
+  border-color: var(--logo-color-main);
+}
+
+.customers-list-item-link:focus .clients-logo {
   fill: var(--logo-color-main);
   border-color: var(--logo-color-main);
 }
@@ -639,7 +670,6 @@ img {
 .address-section {
   width: 231px;
   margin-top: 20px;
-  margin-bottom: 60;
 }
 
 .exact-adress-item {
@@ -673,15 +703,12 @@ img {
 .join-group {
   flex-direction: column;
   align-items: baseline;
-  margin-bottom: 100px;
   margin-left: 70px;
-  margin-right: 663px;
-  align-items: center;
 }
 
 .join-item {
   font-size: 14px;
-  line-height: 1.14px;
+  font-weight: bold;
   letter-spacing: 0.03em;
   color: var(--logo-color-footer);
   text-transform: uppercase;
@@ -691,8 +718,6 @@ img {
   display: flex;
   justify-content: center;
   margin-top: 16px;
-  padding-right: 32px;
-  padding-left: 32px;
 }
 
 .socials-footer {
